@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
+import net.minecraft.item.ItemStack;
+
 public class Deck
 {
 
@@ -13,6 +15,7 @@ public class Deck
     public Deck()
     {
         cards = new Stack<Card>();
+        cards.push(new Card("testing", 5, 0, null));
     }
 
     public void shuffle()
